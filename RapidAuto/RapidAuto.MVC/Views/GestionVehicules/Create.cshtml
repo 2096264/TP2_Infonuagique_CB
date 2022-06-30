@@ -1,0 +1,88 @@
+﻿@model RapidAuto.MVC.Models.Vehicule
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Ajout d'un véhicule</h1>
+
+<h4>Détails du véhicule</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create" method="post" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Constructeur" class="control-label"></label>
+                <input asp-for="Constructeur" class="form-control" />
+                <span asp-validation-for="Constructeur" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Modele" class="control-label"></label>
+                <input asp-for="Modele" class="form-control" />
+                <span asp-validation-for="Modele" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AnneeFabrication" class="control-label"></label>
+                <input asp-for="AnneeFabrication" class="form-control" />
+                <span asp-validation-for="AnneeFabrication" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Type" class="control-label"></label>
+                @Html.DropDownListFor(model => model.Type, new SelectList(ViewBag.Types), "Choisir un type", new { @class = "form-control" })
+                <span asp-validation-for="Type" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NbrSieges" class="control-label"></label>
+                <input asp-for="NbrSieges" class="form-control" />
+                <span asp-validation-for="NbrSieges" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Couleur" class="control-label"></label>
+                <input asp-for="Couleur" class="form-control" />
+                <span asp-validation-for="Couleur" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Niv" class="control-label"></label>
+                <input asp-for="Niv" class="form-control" value="1GTDK14K4JZ512094"/>
+                <span asp-validation-for="Niv" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NomImage1" class="control-label"></label>
+                <input type="file" name="image1" class="form-control" />
+                <span class="text-danger">@ViewBag.ImageNulle</span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NomImage2" class="control-label"></label>
+                <input type="file" name="image2" class="form-control" />
+                <span class="text-danger">@ViewBag.ImageNulle</span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <textarea style="resize: none;" rows="4" cols="50" asp-for="Description" class="form-control"></textarea>
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="EstVendu" /> @Html.DisplayNameFor(model => model.EstVendu)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="Prix" class="control-label"></label>
+                <input asp-for="Prix" class="form-control" />
+                <span asp-validation-for="Prix" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Sauvegarder" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Retour au catalogue</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

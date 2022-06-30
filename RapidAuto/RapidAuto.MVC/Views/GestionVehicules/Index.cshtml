@@ -1,0 +1,97 @@
+﻿@model IEnumerable<RapidAuto.MVC.Models.Vehicule>
+
+@{
+    ViewData["Title"] = "Catalogue de véhicules";
+}
+
+@{
+    var triConstructeur = ViewBag.TriConstructeur;
+    }
+
+<h1>Catalogue de véhicules</h1>
+<form asp-action="Index" method="get">
+    <div class="form-actions no-color">
+        <p>
+            Filtrer:
+            <select name="triConstructeur"
+                    asp-items="@ViewBag.SelectListConstructeurs"></select>:
+            <input type="submit" value="Filtrer" class="btn btn-default"/>
+        </p>
+    </div>
+</form>
+<form asp-action="Index" asp-route-filtreDeRecherche="@ViewBag.FiltreDeRecherche" method="get">
+    <div class="form-actions no-color">
+        <p>
+            Trouver par:
+            <select name="filtreDeRecherche" asp-items="@ViewBag.SelectListFiltreRecherche"></select>:
+            <input type="text" name="chaineDeRecherche" value="@ViewBag.ChaineDeRecherche" />
+            <input type="submit" value="Rechercher" class="btn btn-default"/>
+            <a class="btn btn-default" asp-action="Index">Réinitialiser</a>
+        </p>
+    </div>
+</form>
+<p>
+    <a class="btn btn-primary" asp-action="Create">Ajouter un véhicule</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NomImage1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Constructeur)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.Modele)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AnneeFabrication)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Prix)
+                <a asp-route-prixAsc=@true
+                   asp-route-filtreDeRecherche="@ViewBag.FiltreDeRecherche"
+                   asp-route-triConstructeur="@ViewBag.TriConstructeur"
+                   asp-route-chaineDeRecherche="@ViewBag.ChaineDeRecherche">
+                    ↑
+                </a>
+                <a asp-route-prixDesc=@true
+                   asp-route-filtreDeRecherche="@ViewBag.FiltreDeRecherche"
+                   asp-route-chaineDeRecherche="@ViewBag.ChaineDeRecherche"
+                   asp-route-triConstructeur="@ViewBag.TriConstructeur">
+                    ↓
+                </a>
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    <img src="@Url.Action("GetImage","GestionVehicules", new {nom = item.NomImage1})" width=200 />
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Constructeur)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Modele)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AnneeFabrication)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Prix)
+                </td>
+                <td>
+                    @Html.ActionLink("Modifier", "Edit", new { item.ID }) |
+                    @Html.ActionLink("Voir détails", "Details", new { item.ID }) |
+                    @Html.ActionLink("Supprimer", "Delete", new { item.ID })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

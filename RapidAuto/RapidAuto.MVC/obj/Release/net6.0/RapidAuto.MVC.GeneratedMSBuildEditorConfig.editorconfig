@@ -1,0 +1,120 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = RapidAuto.MVC
+build_property.RootNamespace = RapidAuto.MVC
+build_property.ProjectDir = D:\Developpement_applications_securitaires\Infonuagique\TP2\temp\TP2_Infonuagique_CB\RapidAuto\RapidAuto.MVC\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\Developpement_applications_securitaires\Infonuagique\TP2\temp\TP2_Infonuagique_CB\RapidAuto\RapidAuto.MVC
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/Developpement_applications_securitaires/Infonuagique/TP2/temp/TP2_Infonuagique_CB/RapidAuto/RapidAuto.MVC/Views/GestionCommandes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdGlvbkNvbW1hbmRlc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Developpement_applications_securitaires/Infonuagique/TP2/temp/TP2_Infonuagique_CB/RapidAuto/RapidAuto.MVC/Views/GestionCommandes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdGlvbkNvbW1hbmRlc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Developpement_applications_securitaires/Infonuagique/TP2/temp/TP2_Infonuagique_CB/RapidAuto/RapidAuto.MVC/Views/GestionCommandes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdGlvbkNvbW1hbmRlc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Developpement_applications_securitaires/Infonuagique/TP2/temp/TP2_Infonuagique_CB/RapidAuto/RapidAuto.MVC/Views/GestionCommandes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdGlvbkNvbW1hbmRlc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Developpement_applications_securitaires/Infonuagique/TP2/temp/TP2_Infonuagique_CB/RapidAuto/RapidAuto.MVC/Views/GestionCommandes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdGlvbkNvbW1hbmRlc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Developpement_applications_securitaires/Infonuagique/TP2/temp/TP2_Infonuagique_CB/RapidAuto/RapidAuto.MVC/Views/GestionFavoris/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdGlvbkZhdm9yaXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Developpement_applications_securitaires/Infonuagique/TP2/temp/TP2_Infonuagique_CB/RapidAuto/RapidAuto.MVC/Views/GestionFavoris/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdGlvbkZhdm9yaXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Developpement_applications_securitaires/Infonuagique/TP2/temp/TP2_Infonuagique_CB/RapidAuto/RapidAuto.MVC/Views/GestionUtilisateurs/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdGlvblV0aWxpc2F0ZXVyc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Developpement_applications_securitaires/Infonuagique/TP2/temp/TP2_Infonuagique_CB/RapidAuto/RapidAuto.MVC/Views/GestionUtilisateurs/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdGlvblV0aWxpc2F0ZXVyc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Developpement_applications_securitaires/Infonuagique/TP2/temp/TP2_Infonuagique_CB/RapidAuto/RapidAuto.MVC/Views/GestionUtilisateurs/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdGlvblV0aWxpc2F0ZXVyc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Developpement_applications_securitaires/Infonuagique/TP2/temp/TP2_Infonuagique_CB/RapidAuto/RapidAuto.MVC/Views/GestionUtilisateurs/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdGlvblV0aWxpc2F0ZXVyc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Developpement_applications_securitaires/Infonuagique/TP2/temp/TP2_Infonuagique_CB/RapidAuto/RapidAuto.MVC/Views/GestionUtilisateurs/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdGlvblV0aWxpc2F0ZXVyc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Developpement_applications_securitaires/Infonuagique/TP2/temp/TP2_Infonuagique_CB/RapidAuto/RapidAuto.MVC/Views/GestionVehicules/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdGlvblZlaGljdWxlc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Developpement_applications_securitaires/Infonuagique/TP2/temp/TP2_Infonuagique_CB/RapidAuto/RapidAuto.MVC/Views/GestionVehicules/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdGlvblZlaGljdWxlc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Developpement_applications_securitaires/Infonuagique/TP2/temp/TP2_Infonuagique_CB/RapidAuto/RapidAuto.MVC/Views/GestionVehicules/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdGlvblZlaGljdWxlc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Developpement_applications_securitaires/Infonuagique/TP2/temp/TP2_Infonuagique_CB/RapidAuto/RapidAuto.MVC/Views/GestionVehicules/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdGlvblZlaGljdWxlc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Developpement_applications_securitaires/Infonuagique/TP2/temp/TP2_Infonuagique_CB/RapidAuto/RapidAuto.MVC/Views/GestionVehicules/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdGlvblZlaGljdWxlc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Developpement_applications_securitaires/Infonuagique/TP2/temp/TP2_Infonuagique_CB/RapidAuto/RapidAuto.MVC/Views/Home/CodeStatus.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb2RlU3RhdHVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Developpement_applications_securitaires/Infonuagique/TP2/temp/TP2_Infonuagique_CB/RapidAuto/RapidAuto.MVC/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Developpement_applications_securitaires/Infonuagique/TP2/temp/TP2_Infonuagique_CB/RapidAuto/RapidAuto.MVC/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Developpement_applications_securitaires/Infonuagique/TP2/temp/TP2_Infonuagique_CB/RapidAuto/RapidAuto.MVC/Views/Home/Sauvegarder.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTYXV2ZWdhcmRlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Developpement_applications_securitaires/Infonuagique/TP2/temp/TP2_Infonuagique_CB/RapidAuto/RapidAuto.MVC/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Developpement_applications_securitaires/Infonuagique/TP2/temp/TP2_Infonuagique_CB/RapidAuto/RapidAuto.MVC/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Developpement_applications_securitaires/Infonuagique/TP2/temp/TP2_Infonuagique_CB/RapidAuto/RapidAuto.MVC/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Developpement_applications_securitaires/Infonuagique/TP2/temp/TP2_Infonuagique_CB/RapidAuto/RapidAuto.MVC/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Developpement_applications_securitaires/Infonuagique/TP2/temp/TP2_Infonuagique_CB/RapidAuto/RapidAuto.MVC/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-o8ujcscriy

@@ -1,0 +1,56 @@
+﻿@model RapidAuto.MVC.Models.Commandes.Commande
+
+@{
+    ViewData["Title"] = "Nouvelle Commande";
+}
+
+<h1>Nouvelle commande</h1>
+
+<h4>Entrez votre numéro de compte pour commander le véhicule</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input hidden asp-for="VehiculeID" value="@ViewBag.vehicule.ID" />
+            <h2>
+                @ViewBag.vehicule.Constructeur
+                @ViewBag.vehicule.Modele
+                @ViewBag.vehicule.AnneeFabrication
+
+            </h2>
+            <p></p>
+            <p>______________________________________________________</p>
+            <h3>
+                @ViewBag.vehicule.Description
+            </h3>
+            <br />
+            <div class="form-group">
+                <label asp-for="UtilisateurID" class="control-label"></label>
+                <input asp-for="UtilisateurID" class="form-control" />
+                <span asp-validation-for="UtilisateurID" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group">
+                <input type="submit" value="Commander" class="btn btn-primary" />
+            </div>
+            <br />
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-controller="GestionUtilisateurs" asp-action="Create">Créer un compte</a>
+</div>
+<div>
+    <a asp-controller="GestionVehicules" asp-action="Index">Retour a la liste des véhicules</a>
+</div>
+<div>
+    <a asp-controller="GestionVehicules" asp-action="Details" asp-route-id="@ViewBag.vehicule.ID">Annuler</a>
+</div>
+
+@section Scripts {
+    @{
+    await Html.RenderPartialAsync("_ValidationScriptsPartial");
+}
+}

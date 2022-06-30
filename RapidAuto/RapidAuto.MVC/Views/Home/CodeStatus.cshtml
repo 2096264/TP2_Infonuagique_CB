@@ -1,0 +1,78 @@
+﻿@model RapidAuto.MVC.Models.CodeStatusViewModel
+
+@{
+    ViewData["Title"] = "OOPS";
+}
+@{
+    if (Model.Code == 404)
+    {
+        <h1>La cours arrière</h1>
+
+        <div>
+            <h4>OOPS! - Seriez-vous perdu par hasard?</h4>
+
+            <hr />
+            <p>Il n'y à rien à voir par ici!</p>
+
+            <img src="@Url.Action("GetImage","GestionVehicules", new {nom = "erreur404.jpg"})" width=800 />
+
+            @if (Model.AfficherId)
+            {
+                <h3>ID de requète</h3>
+                <p>@Model.IdRequete</p>
+            }
+            <h4 class="text-danger">Code HTTP: @Model.Code</h4>
+            <h4 class="text-danger">@Model.MessageErreur</h4>
+        </div>
+    }
+
+    else if (Model.Code == 500)
+    {
+        <h1>Au garage!</h1>
+
+        <div>
+            <h4>OOPS! - Il semble qu'une erreure interne soit survenue</h4>
+
+            <hr />
+            <p>Ce ne sera pas long la dépanneuse est là!</p>
+
+            <img src="@Url.Action("GetImage","GestionVehicules", new {nom = "erreur500.jpg"})" width=800 />
+
+            @if (Model.AfficherId)
+            {
+                <h3>ID de requète</h3>
+                <p>@Model.IdRequete</p>
+            }
+            <h4 class="text-danger">Code HTTP: @Model.Code</h4>
+            <h4 class="text-danger">@Model.MessageErreur</h4>
+        </div>
+    }
+
+    else
+    {
+        <h1>Mais comment c'est arrivé?</h1>
+
+        <div>
+            <h4>OOPS! - Il semble qu'une erreure inconnue soit survenue</h4>
+
+            <hr />
+            <p>Veuillez nous excuser pour ce désagrément.</p>
+
+            <img src="@Url.Action("GetImage","GestionVehicules", new {nom = "erreurAutre.png"})" width=800 />
+
+            @if (Model.AfficherId)
+            {
+                <h3>ID de requète</h3>
+                <p>@Model.IdRequete</p>
+            }
+            <h4 class="text-danger">Code HTTP: @Model.Code</h4>
+            <h4 class="text-danger">@Model.MessageErreur</h4>
+        </div>
+
+    }
+}
+
+<p>Si l'erreur se reproduit veuillez <a href="https://youtu.be/dQw4w9WgXcQ">nous contacter!</a></p>
+
+
+

@@ -1,0 +1,10 @@
+﻿@model RapidAuto.MVC.Models.EntGestionFichiers
+@{
+    ViewData["Title"] = "Test Sauvegarde Photo";
+}
+<form asp-action="Sauvegarder" method="post" enctype="multipart/form-data">
+    <input type="text" asp-for="CodeVehicule"/>
+    <input type="file" name="Image1"/>
+    <input type="file" name="Image2"/>
+    <input type="submit" value="Envoyer la demande" class="btn btn-primary" />
+</form>

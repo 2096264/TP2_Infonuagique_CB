@@ -1,0 +1,50 @@
+﻿@model IEnumerable<RapidAuto.MVC.Models.Favoris.FavorisIndex>
+
+@{
+    ViewData["Title"] = "Favoris";
+}
+
+<h1>Mes favoris</h1>
+@{
+    if (ViewBag.MessageFavorisVide != null)
+    {
+        <h4 style="color:red">@ViewBag.MessageFavorisVide</h4>
+        <a asp-controller="GestionVehicules" asp-action="Index">Liste des véhicules</a>
+
+    }
+    else
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.NomImage1)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Description)
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            <img src="@Url.Action("GetImage","GestionVehicules", new {nom = item.NomImage1})" width=200 />
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Description)
+                        </td>
+                        <td>
+                            <a asp-controller="GestionVehicules" asp-action="Details" asp-route-id="@item.VehiculeID">Détails du véhicule</a> |
+                            <a href="@Url.Action("RetirerDeLaListe","GestionFavoris", new { idVehicule=item.VehiculeID})">Retirer de mes favoris</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+
+
+}

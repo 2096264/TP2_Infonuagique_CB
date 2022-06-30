@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RapidAuto.Commandes.API</name>
+    </assembly>
+    <members>
+        <member name="M:RapidAuto.Commandes.API.Controllers.CommandesController.Get">
+            <summary>
+            Retourne toutes les commandes
+            </summary>
+            <response code="200">Liste des commandes retourné avec succès</response>
+            <response code="404">Liste des commandes introuvable</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:RapidAuto.Commandes.API.Controllers.CommandesController.Get(System.Int32)">
+            <summary>
+            Retourne une commandes selon son ID
+            </summary>
+            <param name="id">id de la commandes à retourner</param>   
+            <response code="200">Commande trouvé et retourné avec succès</response>
+            <response code="404">Commande introuvable pour l'id spécifé</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:RapidAuto.Commandes.API.Controllers.CommandesController.Put(System.Int32,RapidAuto.Commandes.API.Models.Commande)">
+            <summary>
+            Modifier une commande selon son ID
+            </summary>
+            <param name="id">id de la commande à modifier</param>
+            <param name="commande">Informations de la commande à enregistrer</param>
+            <response code="200">Commande trouvé et retourné avec succès</response>
+            <response code="400">Le ID ne correspond pas au Id de la commande à modifier</response>
+            <response code="404">Utilisateurs introuvable pour l'id spécifé</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:RapidAuto.Commandes.API.Controllers.CommandesController.Post(RapidAuto.Commandes.API.Models.Commande)">
+            <summary>
+            Ajoute une commande à la base de données
+            </summary>
+            <param name="commande">Informations de la commande à enregistrer</param>   
+            <response code="201">La commande à été ajouté avec succès</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:RapidAuto.Commandes.API.Controllers.CommandesController.Delete(System.Int32)">
+            <summary>
+            Supprimer une commande selon son ID
+            </summary>
+            <param name="id">id de la commande à modifier</param>
+            <response code="200">Commande trouvé et supprimé avec succès</response>
+            <response code="404">Commande introuvable pour l'id spécifé</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+    </members>
+</doc>

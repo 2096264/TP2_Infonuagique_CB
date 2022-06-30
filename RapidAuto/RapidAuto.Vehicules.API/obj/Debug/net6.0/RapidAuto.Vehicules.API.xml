@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RapidAuto.Vehicules.API</name>
+    </assembly>
+    <members>
+        <member name="M:RapidAuto.Vehicules.API.Controllers.VehiculesController.Get">
+            <summary>
+            Retourne tout les véhicules
+            </summary>
+            <response code="200">Liste de véhicule retourné avec succès</response>
+            <response code="404">Liste de véhicule introuvable</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:RapidAuto.Vehicules.API.Controllers.VehiculesController.Get(System.String,System.String)">
+            <summary>
+            Retourne tout les véhicules
+            </summary>
+            <response code="200">Liste de véhicule retourné avec succès</response>
+            <response code="404">Liste de véhicule introuvable</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:RapidAuto.Vehicules.API.Controllers.VehiculesController.Get(System.Int32)">
+            <summary>
+            Retourne un véhicule selon son ID
+            </summary>
+            <param name="id">id du véhicule à retourner</param>   
+            <response code="200">Véhicule trouvé et retourné avec succès</response>
+            <response code="404">Véhicule introuvable pour l'id spécifé</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:RapidAuto.Vehicules.API.Controllers.VehiculesController.Put(System.Int32,RapidAuto.Vehicules.API.Models.Vehicule)">
+            <summary>
+            Modifier un véhicule selon son ID
+            </summary>
+            <param name="id">id du véhicule à modifier</param>
+            <param name="vehicule">Informations du véhicule à enregistrer</param>
+            <response code="200">Véhicule trouvé et retourné avec succès</response>
+            <response code="400">Le ID ne correspond pas au Id du véhicule à modifier</response>
+            <response code="404">Véhicule introuvable pour l'id spécifé</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:RapidAuto.Vehicules.API.Controllers.VehiculesController.Post(RapidAuto.Vehicules.API.Models.Vehicule)">
+            <summary>
+            Ajoute un véhicule à la base de données
+            </summary>
+            <param name="vehicule">Informations du véhicule à enregistrer</param>   
+            <response code="200">Le véhicule à été ajouté avec succès</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+        <member name="M:RapidAuto.Vehicules.API.Controllers.VehiculesController.DeleteVehicule(System.Int32)">
+            <summary>
+            Supprimer un utilisateur selon son ID
+            </summary>
+            <param name="id">id du véhicule à modifier</param>
+            <response code="200">Véhicule trouvé et supprimé avec succès</response>
+            <response code="404">Véhicule introuvable pour l'id spécifé</response>
+            <response code="500">Oops! le service est indisponible pour le moment</response>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,45 @@
+﻿@model IEnumerable<RapidAuto.MVC.Models.Commandes.Commande>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UtilisateurID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VehiculeID)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UtilisateurID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VehiculeID)
+            </td>
+            <td>
+                @Html.ActionLink("Modifier", "Edit", new { id=item.ID}) |
+                @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+                @Html.ActionLink("Supprimer", "Delete", new { id=item.ID })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
