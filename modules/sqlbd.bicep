@@ -1,45 +1,33 @@
 param location string = resourceGroup().location
 param dbServerName string = 'sqlbdServer'
-param dbNameVehicules string = 'Véhicules'
-param dbNameUtilisateurs string = 'Utilisateurs'
-param dbNameCommandes string = 'Commandes'
+param sku string 
+var administratorLoginPassword = ''
+var administratorLogin = ''
+var dbNames = []
+
 
 
 resource SQLServer 'Microsoft.Sql/servers@2021-05-01-preview' = {
   name:'${dbServerName}-${uniqueString(resourceGroup().id)}'
   location:location
+  properties:{   
+    administratorLoginPassword:administratorLoginPassword
+    administratorLogin:administratorLogin
+  }
 
 }
 
-resource dataBaseVehicules 'Microsoft.Sql/servers/databases@2021-05-01-preview' = {
+resource dataBase 'Microsoft.Sql/servers/databases@2021-05-01-preview' = [for dbName in dbNames:{
   parent:SQLServer
-  name:dbNameVehicules
+  name:dbName
   location:location
   sku: {
-    name: 'Basic'
-    tier: 'Basic'
+    name: sku
+    tier: sku
   }
-}
+}]
 
-resource dataBaseUtilisateurs 'Microsoft.Sql/servers/databases@2021-05-01-preview' = {
-  parent:SQLServer
-  name:dbNameUtilisateurs
-  location:location
-  sku: {
-    name: 'Basic'
-    tier: 'Basic'
-  }
-}
 
-resource dataBaseCommandes 'Microsoft.Sql/servers/databases@2021-05-01-preview' = {
-  parent:SQLServer
-  name:dbNameCommandes
-  location:location
-  sku: {
-    name: 'Basic'
-    tier: 'Basic'
-  }
-}
 
 resource firewallRules 'Microsoft.Sql/servers/firewallRules@2021-05-01-preview' = {
   parent: SQLServer
