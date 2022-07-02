@@ -12,23 +12,22 @@ pool:
 
 variables:
   buildConfiguration: 'Release'
-  serviceConnection : 'az-serviceprincipal'
-  resourceGroupName: 'RapidAutoMVC20220630100135ResourceGroup'
+  serviceConnection : '2096264'
   location: 'canadacentral'
   templateFile: '**/main.bicep'
   webAppName: 'TP2'
     
 
-
 steps:
 - task: AzureCLI@2
   displayName: Preview Bicep Changes
-  inputs:    
+  inputs:
+    azureSubscription: $(serviceConnection)    
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
     inlineScript: |
       az --version     
-      az deployment group what-if --resource-group $(resourceGroupName) \
+      az deployment group \
          --template-file $(templateFile) \
          --parameters webAppName=$(webAppName)
 
